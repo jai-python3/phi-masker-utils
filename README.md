@@ -5,10 +5,10 @@ Collection of Python modules for masking PHI in delimited files and Excel worksh
 - [phi-masker-utils](#phi-masker-utils)
   - [Improvements](#improvements)
   - [Use Cases](#use-cases)
-  - [Class Diagrams](#class-diagrams)
+  - [Class Diagram](#class-diagram)
   - [Installation](#installation)
+  - [Exported Scripts](#exported-scripts)
   - [Usage](#usage)
-  - [Exported scripts](#exported-scripts)
   - [Contributing](#contributing)
   - [To-Do/Coming Next](#to-docoming-next)
   - [CHANGELOG](#changelog)
@@ -21,42 +21,47 @@ Please see the [TODO](docs/TODO.md) for a list of upcoming improvements.
 
 ## Use Cases
 
-<img src="use_cases.png" width="400" height="400" alt="Use Cases diagram">
+<img src="use_cases.png" width="400" height="200" alt="Use Cases diagram">
 
-## Class Diagrams
+## Class Diagram
 
-![class diagrams](class_diagrams.png)
+![class diagram](class_diagram.png)
 
 ## Installation
 
 Please see the [INSTALL](docs/INSTALL.md) guide for instructions.
 
+## Exported Scripts
+
+* mask-file
+
 ## Usage
 
 ```python
-import phi-masker-utils
+from phi_masker_utils import Masker
 
 config_file = "conf/config.yaml"
 config = yaml.safe_load(Path(config_file).read_text())
 
-phi-masker-utils = phi-masker-utils(
+# Tab-delimited file
+infile = "my.tsv"
+outfile = "my_masked.tsv"
+
+# Or comma-separated file
+infile = "my.csv"
+outfile = "my_masked.csv"
+
+masker = Masker(
     config=config,
     config_file=config_file,
+    infile=infile,
     logfile=logfile,
     outdir=outdir,
     outfile=outfile,
     verbose=verbose,
 )
 
-phi-masker-utils.phi-masker-utils()
-```
-
-## Exported scripts
-
-To use the exported script for ... :
-
-```bash
-
+masker.mask_phi_values()
 ```
 
 ## Contributing

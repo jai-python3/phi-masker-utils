@@ -5,7 +5,7 @@
 
 import unittest
 
-from phi_masker_utils import phi_masker_utils
+from phi_masker_utils import phi_masker_utils  # noqa: F401
 
 
 class TestPhi_masker_utils(unittest.TestCase):

@@ -1,0 +1,21 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>20</x><y>0</y><w>370</w><h>330</h></coordinates><panel_attributes>Masker
+
+--
+- config: Dict[str, Any]
+- config_file: str
+- extension: str
+- infile: str
+- logfile: str
+- outdir: str
+- outfile: str
+- verbose: bool
+- _masked_lookup: Dict[Any, Any]
+--
+- _derive_outfile()
+- _write_masked_values()
+- _load_delimited_rules()
+- _load_xlsx_rules()
+- _mask_delimited_values(value: str, field_name: str) -&gt; str
+- _mask_csv()
+- _mask_tsv()
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
