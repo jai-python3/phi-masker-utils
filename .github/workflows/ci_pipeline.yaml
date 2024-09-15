@@ -1,4 +1,4 @@
-name: tbd CI
+name: PHI Masker Utils CI
 
 on:
   workflow_dispatch: # Allow for execution on demand.

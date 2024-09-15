@@ -36,6 +36,12 @@ nav:
   - TODO: TODO.md
   - Code Reference:
   # INSERT CODE REFERENCE SECTION
+    - Console Helper: console_helper.md
+    - Constants: constants.md
+    - File Utils: file_utils.md
+    - Mask File: mask_file.md
+    - Masker: masker.md
+    - System Caller: system_caller.md
 
 
 markdown_extensions:
