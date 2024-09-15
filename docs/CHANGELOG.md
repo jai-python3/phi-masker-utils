@@ -1,16 +1,5 @@
-## [v0.1.0](https://github.com/jai-python3/tbd/tree/v0.1.0) - 2023-12-22
+## [v0.1.0](https://github.com/jai-python3/phi-masker-utils/tree/v0.1.0) - 2024-09-15
 
 ADDS:
-- something
-- something else
-  
-CHANGES:
-- something
-- something else
-  
-FIXES:
-- something
-- something else
-  
-
-
+- Initial implementation to support masking in comma-separated files.
+- Initial implementation to support masking in tab-delimited files.
