@@ -7,7 +7,7 @@ Collection of Python modules for masking PHI in delimited files and Excel worksh
   - [Use Cases](#use-cases)
   - [Class Diagram](#class-diagram)
   - [Installation](#installation)
-  - [Exported Scripts](#exported-scripts)
+  - [Exported Script](#exported-script)
   - [Usage](#usage)
   - [Contributing](#contributing)
   - [To-Do/Coming Next](#to-docoming-next)
@@ -31,9 +31,15 @@ Please see the [TODO](docs/TODO.md) for a list of upcoming improvements.
 
 Please see the [INSTALL](docs/INSTALL.md) guide for instructions.
 
-## Exported Scripts
+## Exported Script
 
-* mask-file
+```shell
+mask-file --infile ~/projects/phi-masker-utils/labguru_mockup.csv --outdir .
+--config_file was not specified and therefore was set to 
+'/tmp/phi-masker-utils/venv/lib/python3.10/site-packages/phi_masker_utils/conf/config.yaml'
+--logfile was not specified and therefore was set to './mask_file.log'
+--outfile was not specified and therefore was set to './labguru_mockup.csv'
+```
 
 ## Usage
 
